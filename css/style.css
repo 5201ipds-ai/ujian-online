@@ -1,0 +1,153 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    sans-serif;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* TABEL */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background: #f1f5f9;
+  font-weight: 700;
+}
+
+th,
+td {
+  border: 1px solid #e2e8f0;
+  padding: 12px;
+  vertical-align: top;
+}
+
+/* SOAL */
+
+.blok-soal {
+  border:
+    1px solid #e2e8f0;
+
+  border-radius: 24px;
+
+  padding: 24px;
+
+  background:
+    linear-gradient(
+      to bottom right,
+      white,
+      #f8fafc
+    );
+
+  box-shadow:
+    0 1px 3px rgba(0,0,0,.06);
+
+  transition: .2s;
+}
+
+.blok-soal:hover {
+  box-shadow:
+    0 8px 24px rgba(0,0,0,.08);
+
+  transform:
+    translateY(-1px);
+}
+
+/* PILIHAN */
+
+.pilihan-jawaban {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+
+  border:
+    1px solid #e2e8f0;
+
+  border-radius: 18px;
+
+  padding: 16px;
+
+  background: white;
+
+  cursor: pointer;
+
+  transition: .2s;
+}
+
+.pilihan-jawaban:hover {
+  background: #eff6ff;
+  border-color: #93c5fd;
+}
+
+.pilihan-jawaban input {
+  margin-top: 4px;
+  accent-color: #2563eb;
+}
+
+/* BADGE NOMOR */
+
+.nomor-soal {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 16px;
+
+  background: #2563eb;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+
+  flex-shrink: 0;
+}
+
+/* TIMER */
+
+#timerUjian {
+  min-width: 170px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .blok-soal {
+    padding: 18px;
+  }
+
+  .pilihan-jawaban {
+    padding: 14px;
+  }
+
+}
